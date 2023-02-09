@@ -1,2 +1,6 @@
 #!/usr/bin/env bash
 #Write a Bash script that gives the content of the file /etc/passwd
+while read -r READ
+do
+	echo "${READ}"
+done < /etc/passwd
